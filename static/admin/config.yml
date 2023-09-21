@@ -2,21 +2,45 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to main)
 
-media_folder: 'static/images/uploads' # Media files will be stored in the repo under static/images/uploads
-public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: 'posts' # Used in routes, e.g., /admin/collections/blog
-    label: 'Posts' # Used in the UI
-    folder: 'content/_posts/blog' # The path to the folder where the documents are stored
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "content/_posts/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: 'Author', name: 'author', widget: 'string', default: 'Marcus Baw' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'date', name: 'date', widget: 'datetime' }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "string",
+          default: "Marcus Baw",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "date", name: "date", widget: "datetime" }
       # - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       # - { label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Blurb, name: blurb, widget: string }
+          - {
+              label: "Section",
+              name: section,
+              widget: "string",
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Text", name: "text", widget: "text" },
+                ],
+            }

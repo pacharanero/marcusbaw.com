@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://marcusbaw.com"
 title = "Dr Marcus Baw"
 
 copyright = ""
@@ -19,7 +19,7 @@ googleAnalytics = ""
 [outputs]
 home = ["HTML", "JSON", "RSS"]
 
-# prevent build failures when using Hugo's template _internal/opengraph.html 
+# prevent build failures when using Hugo's template _internal/opengraph.html
 [taxonomies]
 category = "categories"
 tag = "tags"
@@ -81,11 +81,11 @@ avatar = "img/home-bg.jpg"
 bio = "NHS General Hacktitioner (GP/A&E) Yorks. ex-ICU/Anaes. FFCI. Discourse Plugins & Hosting, Ruby|Rails|JS|Python"
 
 [params.social]
-twitter = "johndoe"
+twitter = "marcus_baw"
 facebook = "johndoe"
 # zhihu = "johndoe"
 # weibo = "johndoe"
-# github = "johndoe"
+github = "pacharanero"
 # gitlab = "johndoe"
 # linkedin = "johndoe"
 rss = true

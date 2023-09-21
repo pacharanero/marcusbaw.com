@@ -6,4 +6,4 @@ description: Some test post
 tags:
   - discourse
 ---
-#﻿# Markdown post content
+## Markdown post content

@@ -61,40 +61,40 @@ weight = 100
 
 
 [params]
-author = "Dr Marcus Baw"
+author = "Marcus Baw"
 description = "NHS General Hacktitioner (GP/A&E) Yorks. ex-ICU/Anaes. FFCI. Discourse Plugins & Hosting, Ruby|Rails|JS|Python"
-keywords = "blog,developer,personal"
+keywords = "blog,developer,personal,nhs,technology,healthtech,discourse,general-practitioner,health-informatics"
 img_home = "img/home-bg.jpg"
 img_404 = "img/404-bg.jpg"
 
 useFaviconGenerator = true
 
 custom_js = []
-custom_css = [
-] # ["css/custom.css"]  Add your file to assets folder  [assets/css/custom.css]
+custom_css = [] # ["css/custom.css"]  Add your file to assets folder  [assets/css/custom.css]
 
 [params.sidebar]
 enable = true
-gravatarEmail = ""
+gravatarEmail = "marcusbaw@gmail.com"
 # Overwritten by your gravatar image if `gravatarEmail` is filled
 avatar = "img/home-bg.jpg"
-bio = "NHS General Hacktitioner (GP/A&E) Yorks. ex-ICU/Anaes. FFCI. Discourse Plugins & Hosting, Ruby|Rails|JS|Python"
+bio = "Marcus Baw is an NHS General 'Hacktitioner' (GP/A&E) based in Yorkshire. ex-ICU/Anaesthesia. Fellow of the Faculty of Clinical Informatics."
 
 [params.social]
 twitter = "marcus_baw"
-facebook = "johndoe"
+# facebook = "johndoe"
 # zhihu = "johndoe"
 # weibo = "johndoe"
 github = "pacharanero"
 # gitlab = "johndoe"
-# linkedin = "johndoe"
+linkedin = "marcus-baw-74418118b"
 rss = true
-# [params.social.mastodon]
-# weight = 56
-# icon = "fab fa-mastodon"
-# format = "https://mastodon.social/%v"
-# id = "johndoe"
-# url = ""
+
+[params.social.mastodon]
+weight = 56
+icon = "fab fa-mastodon"
+format = "https://hachyderm.io/%v"
+id = "marcus_baw"
+url = "https://hachyderm.io/@marcus_baw"
 
 # [[params.friends]]
 # name = "John Doe"
